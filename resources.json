@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Thermodynamics Notes",
+        "description": "Complete hand-written notes for Semester 3 Thermodynamics with solved numerical problems.",
+        "link": "https://example.com/thermo-notes",
+        "semester": "3",
+        "subject": "Thermodynamics"
+    },
+    {
+        "title": "Python Cheat Sheet",
+        "description": "Compact Python reference sheet for quick revisions during exams.",
+        "link": "https://example.com/python-cheatsheet",
+        "semester": "1",
+        "subject": "Python Programming"
+    },
+    {
+        "title": "Control Systems Formula Sheet",
+        "description": "All important formulas for Control Systems, sorted by topic.",
+        "link": "https://example.com/control-formulas",
+        "semester": "5",
+        "subject": "Control Systems"
+    }
+]

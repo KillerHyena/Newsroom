@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Upload Study Resource</h2>
+<form method="POST">
+    <label>Title:</label>
+    <input type="text" name="title" placeholder="e.g. Operating Systems Notes" required>
+
+    <label>Description:</label>
+    <textarea name="description" placeholder="Short description about the file" rows="4" required></textarea>
+
+    <label>Link to Resource:</label>
+    <input type="url" name="link" placeholder="e.g. https://drive.google.com/..." required>
+
+    <label>Semester:</label>
+    <input type="text" name="semester" placeholder="e.g. 5" required>
+
+    <label>Subject:</label>
+    <input type="text" name="subject" placeholder="e.g. Operating Systems" required>
+
+    <button type="submit">Submit Resource</button>
+</form>
+{% endblock %}

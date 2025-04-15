@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Available Study Resources</h2>
+
+<form method="GET">
+    <input type="text" name="semester" placeholder="Filter by Semester">
+    <input type="text" name="subject" placeholder="Filter by Subject">
+    <button type="submit">Filter</button>
+</form>
+
+{% if resources %}
+    {% for resource in resources %}
+    <div class="resource-card">
+        <h3>{{ resource.title }}</h3>
+        <p>{{ resource.description }}</p>
+        <p><strong>Semester:</strong> {{ resource.semester }}</p>
+        <p><strong>Subject:</strong> {{ resource.subject }}</p>
+        <a href="{{ resource.link }}" target="_blank">🔗 Access Resource</a>
+    </div>
+    {% endfor %}
+{% else %}
+    <p>No matching resources found.</p>
+{% endif %}
+{% endblock %}

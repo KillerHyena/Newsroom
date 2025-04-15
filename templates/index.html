@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Welcome to EduBuddy!</h2>
+<p>Your one-stop solution to access and upload study resources organized by subject and semester.</p>
+<a class="btn" href="{{ url_for('upload') }}">Upload a New Resource</a>
+<a class="btn" href="{{ url_for('view_resources') }}">Browse Resources</a>
+{% endblock %}
